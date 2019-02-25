@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cool game</title>
+<style type="text/css">
+  body {
+    margin: 0;
+  }
+  canvas {
+    border: 1px solid black;
+  }
+  div {
+    height: 0;
+    width: 0;
+  }
+</style>
+</head>
+<body id="game">
+  <canvas id="canvas">your browser does not support HTML5 canvas</canvas>
+  <!-- <script src="script.js"></script> -->
+  <!-- <script>
+  function dynamicallyLoadScript(url) {
+    var script = document.createElement("script"); // Make a script DOM node
+    script.src = url; // Set it's src to the provided URL
+    script.type = 'text/javascript';
+
+    document.body.appendChild(script); // Add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
+  }
+  </script> -->
+  <script>
+function theSeriesOfFIBONACCI(theSize) {
+    //a CALCKULATION in two acts
+    //employ'ng the humourous logick of JAVA-SCRIPTE
+
+    //Dramatis Personae
+    var theResult; //an ARRAY to contain THE NUMBERS
+    var theCounter; //a NUMBER, serv'nt to the FOR LOOP
+
+    //ACT I: in which a ZERO is added for INITIATION
+    
+    //[ENTER: theResult]
+    
+    //Upon the noble list bestow a zero
+    var theResult = [0];
+
+    //ACT II: a LOOP in which the final TWO NUMBERS are QUEREED and SUMM'D
+
+    //[ENTER: theCounter]
+
+    //Commence at one and venture o'er the numbers
+    for (theCounter = 1; theCounter < theSize; theCounter++) {
+        theResult[theCounter] = (theResult[theCounter-1] || 1) +
+            theResult[Math.max(0, theCounter-2)];
+    }
+
+    //'Tis done, and here's the answer
+    return theResult;
+
+    //[Exeunt]
+}
+
+console.log( theSeriesOfFIBONACCI( 15 ) );
+</script>
+</body>
+</html>
